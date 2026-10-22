@@ -14,10 +14,10 @@ app = FastAPI(
 # Conexión a MySQL en la nube (Aiven)
 def get_db_connection():
     return pymysql.connect(
-        host="mysql-35731f3f-utsjr-f320.e.aivencloud.com",
+        host="mysql-35731f3f-utsjr-f320.aivencloud.com",
         user="avnadmin",
         password="AVNS_zKLS3uWvvQUa_vSih1o",  # Contraseña configurada para tu instancia de Aiven
-        database="defaultdb",
+        database="LoUDi",
         port=27731,
         cursorclass=pymysql.cursors.DictCursor,
         ssl={"ssl_mode": "REQUIRED"}
