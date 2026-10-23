@@ -6,7 +6,7 @@ from typing import Optional, List
 from datetime import date, time
 
 app = FastAPI(
-    title="API Completa de LoUDI",
+    title="API de LoUDI",
     description="API REST con todas las tablas y relaciones de la base de datos LoUDI",
     version="2.0"
 )
@@ -16,8 +16,8 @@ def get_db_connection():
     return pymysql.connect(
         host="mysql-35731f3f-utsjr-f320.e.aivencloud.com",
         user="avnadmin",
-        password="AVNS_zKLS3uWvvQUa_vSih1o",  # Contraseña configurada para tu instancia de Aiven
-        database="LoUDi",
+        password="AVNS_zKLS3uWvvQUa_vSih1o",  
+        database="defaultdb",
         port=27731,
         cursorclass=pymysql.cursors.DictCursor,
         ssl={"ssl_mode": "REQUIRED"}
